@@ -5,6 +5,7 @@ from django.db import models
 from django.db.models.aggregates import Sum
 
 # Create your models here.
+<<<<<<< HEAD
 
 
 class MovieManager(models.Manager):
@@ -185,3 +186,5 @@ class MovieImage(models.Model):
     user = models.ForeignKey(
         settings.AUTH_USER_MODEL,
         on_delete=models.CASCADE)
+=======
+>>>>>>> parent of 3b0c3b7... Finalización del capítulo 1

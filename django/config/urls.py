@@ -13,8 +13,8 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
-from django.urls import path, include
 from django.contrib import admin
+<<<<<<< HEAD
 
 from django.conf import settings
 from django.conf.urls.static import static
@@ -32,3 +32,10 @@ urlpatterns = [
     path('user/', include(user.urls, namespace='user')),
     path('', include(core.urls, namespace='core')),
 ] + MEDIA_FILE_PATHS
+=======
+from django.urls import path
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+]
+>>>>>>> parent of 3b0c3b7... Finalización del capítulo 1

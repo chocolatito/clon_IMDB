@@ -13,6 +13,7 @@ from django.urls import reverse
 from .models import Movie, Person, Vote
 from .forms import VoteForm, MovieImageForm
 
+<<<<<<< HEAD
 
 # Create your views here.
 
@@ -160,3 +161,6 @@ class MovieImageUpload(LoginRequiredMixin, CreateView):
             'core:MovieDetail',
             kwargs={'pk': movie_id})
         return movie_detail_url
+=======
+# Create your views here.
+>>>>>>> parent of 3b0c3b7... Finalización del capítulo 1
