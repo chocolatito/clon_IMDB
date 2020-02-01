@@ -128,4 +128,10 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 LOGIN_REDIRECT_URL = 'core:MovieList'
-#LOGIN_REDIRECT_URL = 'user:login'
+# LOGIN_REDIRECT_URL = 'user:login'
+
+
+# URL que servirá los archivos cargados
+MEDIA_URL = '/uploaded/'
+# ruta al directorio donde Django debe guardar el código
+MEDIA_ROOT = os.path.join(BASE_DIR, '../media_root')
